@@ -1,9 +1,29 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
+# Exept Makefile
+!Makefile
+
+### Above combination will ignore all files without extension ###
+
 # Binaries for programs and plugins
+bin/
+output/
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
+*.syso
+
+# Astilectron bundler files
+bind_*.go
 
 # Test binary, built with `go test -c`
 *.test
@@ -12,4 +32,11 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
+vendor/
+
+# Editor/IDE files
+.idea/
+.vscode/
+
+# Log folder
+logs/
